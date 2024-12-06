@@ -26,7 +26,7 @@ $data = [];
 // Loop through each section to get the counts for the 'Server' device type
 foreach ($sections as $section) {
     // $sql = "SELECT COUNT(*) as count FROM printers WHERE model = 'Line Printer' AND seciton = '$section'";
-    $sql = "SELECT COUNT(*) as count FROM other WHERE device = 'Projector' AND branch = '$section'";
+    $sql = "SELECT COUNT(*) as count FROM hardwareother WHERE device = 'Projector' AND branch = '$section'";
 
     $result = $conn->query($sql);
 

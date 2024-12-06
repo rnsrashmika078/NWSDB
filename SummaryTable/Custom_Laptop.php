@@ -24,7 +24,7 @@ $data = [];
 
 // Loop through each section to get the counts for the 'Server' device type
 foreach ($sections as $section) {
-    $sql = "SELECT COUNT(*) as count, SUM(quantity) as totalQuantity FROM devices WHERE device_type = 'Laptop' AND section = '$section'";
+    $sql = "SELECT COUNT(*) as count FROM devices WHERE device_type = 'Laptop' AND section = '$section'";
     $result = $conn->query($sql);
 
     // Check if there is a result and assign the count, otherwise assign 0
